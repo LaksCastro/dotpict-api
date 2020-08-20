@@ -151,7 +151,7 @@ img {
 {
   "data": {
     "work": Work,
-    "user_relationship": UserRelationship[]
+    "user_relationship": UserRelationship
   }
 }
 ```
