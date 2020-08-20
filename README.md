@@ -281,3 +281,19 @@ img {
 
 - Note:
   - The field `next_url` can be empty, that means, can be as empty string if the search have no more results
+
+<br>
+<br>
+<br>
+<br>
+
+<h2 align="center">
+  Open Source
+</h2>
+<p align="center">
+  <sub>Copyright © 2020-present, Laks Castro.</sub>
+</p>
+<p align="center">This doc <a href="https://github.com/LaksCastro/dotpict-unofficial-api/blob/master/LICENSE.md">is MIT licensed 💖</a></p>
+<p align="center">
+  <img src="./assets/dot-logo.png" width="35" />
+</p>
