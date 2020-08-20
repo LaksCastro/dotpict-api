@@ -273,6 +273,40 @@ const userRelationship: UserRelationship = {
 </details>
 
 <details>
+  <summary>UserSummary</summary>
+  <br>
+  <ul>
+    <li>
+      <div>
+        <p>Interface</p>
+
+```ts
+interface UserSummary {
+  user: User;
+  works: Work[];
+}
+```
+
+<br>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p>Example</p>
+        
+```ts
+const userSummary: UserSummary = {
+  user: User,
+  works: Work[],
+};
+```
+<br>
+      </div>
+    </li>
+  </ul>
+</details>
+
+<details>
   <summary>ColorCode</summary>
   <br>
   <ul>
