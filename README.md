@@ -19,7 +19,7 @@ This little documentation was written using only the browser DevTools as a base,
 - [Type|Entity definitions](https://github.com/LaksCastro/dotpict-api/blob/master/TYPES.md)
 - [Get trending arts](#2-get-trending-arts)
 - [Get recent arts](#3-get-recent-arts)
-- [Get arts from a user](#4-get-arts-from-a-user)
+- [Get works from a user](#4-get-works-from-a-user)
 
 
 ### 1. Setup
@@ -81,3 +81,30 @@ img {
   }
 }
 ```
+
+
+### 4. Get works from a user
+- Endpoint: `/users/USER_ID/works`
+- Method: `GET`
+- Params:
+  - USER_ID:
+    - description: return a list of works of a user with this ID
+    - usage: call this endpoint to show details of a user and your contents
+    - value: any user ID
+- Available query params:
+  - max_id:
+    - description: return a list of works after the work passed on this param
+    - usage: use this param to build a pagination system
+    - value: any work ID
+- Response:
+```js
+{
+  "data": {
+    "user": User,
+    "works": Work[],
+    "next_url": string
+  }
+}
+```
+- Note:
+  - The field "next_url" can be empty, that means, can be as empty string if the user not have more works
