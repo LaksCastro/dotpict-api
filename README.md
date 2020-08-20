@@ -45,6 +45,7 @@ This little documentation was written using only the browser DevTools as a base,
 ### 1. Setup
 
 - Base URL: `https://api.dotpicko.net`
+- **Very important: see the [Types Definitions File](./TYPES.md) at same time of this README, because all entities and subtypes are defined in this file**
 - Smart tip on render the Pixel Arts: all image url's will have a small size by default (64x64), so, you may have problems to render it on a normal `<img>` HTML tag. To fix this, continue using the `<img>` tag, but with a additional CSS property:
 
 ```css
