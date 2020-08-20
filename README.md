@@ -11,10 +11,10 @@
   <img  src="https://img.shields.io/badge/where_from-doctpit_web_platform-blue" alt="Repo Ref" />
 </p>
 
-### Considerations
+## Considerations
 This little documentation was written using only the browser DevTools as a base, so it has limited and incomplete data, but enough to create a good application. If you want to increase and improve the documentation even more, do not hesitate to visit the Dotpict website and/or edit this README.md! Thank you.
 
-### Documentation
+## Documentation
 - [Setup](#1-setup)
 - [Type declarations](https://github.com/LaksCastro/dotpict-api/blob/master/TYPES.md)
 - [Get trending arts](#2-get-trending-arts)
@@ -22,7 +22,7 @@ This little documentation was written using only the browser DevTools as a base,
 - [Get arts from a user](#4-get-arts-from-a-user)
 
 
-#### 1. Setup
+### 1. Setup
 - Base URL: `https://api.dotpicko.net`
 - Smart tip on render the Pixel Arts: all image url's will have a small size by default (64x64), so, you may have problems to render it on a normal `<img>` HTML tag. To fix this, continue using the `<img>` tag, but with a additional CSS property:
 ```css
@@ -40,7 +40,7 @@ img {
 }
 ```
 
-#### 2. Get trending arts
+### 2. Get trending arts
 - Endpoint: `/works/trend`
 - Method: `GET`
 - Available query params:
@@ -48,7 +48,7 @@ img {
     - description: return a list of works after the work passed on this param
     - usage: use this param to build a pagination system
     - value: any work ID
-- Return:
+- Response:
 ```js
 {
   "data": {
@@ -56,6 +56,27 @@ img {
     "next_url": string,
     "ranking": {
       "ranking_works": RankedWork[]
+    }
+  }
+}
+```
+
+### 3. Get recent arts
+- Endpoint: `/v2/works`
+- Method: `GET`
+- Available query params:
+  - max_id:
+    - description: return a list of works after the work passed on this param
+    - usage: use this param to build a pagination system
+    - value: any work ID
+- Response:
+```js
+{
+  "data": {
+    "works": Work[],
+    "next_url": string,
+    "carousel": {
+      "items": CarouselItem[]
     }
   }
 }
