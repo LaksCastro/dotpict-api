@@ -1,4 +1,4 @@
-- ### User
+- ### User Resource
 - Interface
 ```ts
 interface User {
