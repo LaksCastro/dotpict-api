@@ -17,9 +17,9 @@ This little documentation was written using only the browser DevTools as a base,
 ### Documentation
 - [Setup](#1-setup)
 - [Type declarations](https://github.com/LaksCastro/dotpict-api/blob/master/TYPES.md)
-- Get trending arts
-- Get recent arts
-- Get arts from a user
+- [Get trending arts](#2-get-trending-arts)
+- [Get recent arts](#3-get-recent-arts)
+- [Get arts from a user](#4-get-arts-from-a-user)
 
 
 #### 1. Setup
