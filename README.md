@@ -21,6 +21,7 @@ This little documentation was written using only the browser DevTools as a base,
 - [Get recent arts](#3-get-recent-arts)
 - [Get works from a user](#4-get-works-from-a-user)
 - [Get work threads](#5-get-work-threads)
+- [Get work data](#6-get-work-data)
 
 
 ### 1. Setup
@@ -134,3 +135,23 @@ img {
 ```
 - Note:
   - The field `next_url` can be empty, that means, can be as empty string if the work have no more threads
+
+### 6. Get work data
+- Endpoint: `/works/WORK_ID`
+- Method: `GET`
+- Params:
+  - `WORK_ID`:
+    - description: return details of a work with this ID
+    - usage: call this endpoint to get data/details of a certain work
+    - value: any work ID
+- Available query params:
+  - none
+- Response:
+```js
+{
+  "data": {
+    "work": Work,
+    "user_relationship": UserRelationship[]
+  }
+}
+```
