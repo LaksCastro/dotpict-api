@@ -1,4 +1,63 @@
 <details>
+  <summary>Work</summary>
+  <ul>
+    <li>
+      <div>
+        <p>Interface</p>
+
+```ts
+interface Work {
+  id: number;
+  user: User;
+  image_url: string;
+  ogp_image_url: string;
+  share_url: string;
+  title: string;
+  text: string;
+  color_codes: ColorCode[];
+  like_count: number;
+  tags: string[];
+  width: number;
+  height: number;
+  created_at: number;
+  is_like: boolean;
+  allow_thread: boolean;
+}
+```
+<br>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p>Example</p>
+        
+```ts
+const work : Work {
+  id: 2076467;
+  user: User;
+  image_url: "https://img.dotpicko.net/72b4d2892de744ee5528c90a8bcfe13654307b98267e7b4e099ed80bc4f83551.png";
+  ogp_image_url: "https://img.dotpicko.net/ogp_72b4d2892de744ee5528c90a8bcfe13654307b98267e7b4e099ed80bc4f83551.png";
+  share_url: "https://dotpict.net/works/2076467";
+  title: "Canvas6";
+  text: "";
+  color_codes: ColorCode[];
+  like_count: 0;
+  tags: string[];
+  width: 128;
+  height: 128;
+  created_at: 1597896817;
+  is_like: false;
+  allow_thread: true;
+}
+
+```
+<br>
+      </div>
+    </li>
+  </ul>
+</details>
+
+<details>
   <summary>User</summary>
   <ul>
     <li>
