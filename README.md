@@ -23,7 +23,7 @@ This little documentation was written using only the browser DevTools as a base,
 
 
 #### 1. Setup
-
+- Base URL: `https://api.dotpicko.net`
 - Smart tip on render the Pixel Arts: all image url's will have a small size by default (64x64), so, you may have problems to render it on a normal `<img>` HTML tag. To fix this, continue using the `<img>` tag, but with a additional CSS property:
 ```css
 /* BAD - ALL IMAGES WILL BE SHOW AS LOW QUALITY */
@@ -38,5 +38,4 @@ img {
   height: 930px;
   image-rendering: pixelated;
 }
-
 ```
