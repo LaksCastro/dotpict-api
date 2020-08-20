@@ -15,13 +15,13 @@
 
 ### Documentation
 
-- [Setup](#setup)
+- [Setup](#1-setup)
 - Get trending arts
 - Get recent arts
 - Get arts from a user
 
 
-#### - Setup
+#### 1. Setup
 
 - Smart tip on render the Pixel Arts: all image url's will have a small size by default (64x64), so, you may have problems to render it on a normal `<img>` HTML tag. To fix this, continue using the `<img>` tag, but with a additional CSS property:
 ```css
