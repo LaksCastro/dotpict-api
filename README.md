@@ -45,7 +45,7 @@ img {
 - Endpoint: `/works/trend`
 - Method: `GET`
 - Available query params:
-  - max_id:
+  - `max_id`:
     - description: return a list of works after the work passed on this param
     - usage: use this param to build a pagination system
     - value: any work ID
@@ -66,7 +66,7 @@ img {
 - Endpoint: `/v2/works`
 - Method: `GET`
 - Available query params:
-  - max_id:
+  - `max_id`:
     - description: return a list of works after the work passed on this param
     - usage: use this param to build a pagination system
     - value: any work ID
@@ -87,12 +87,12 @@ img {
 - Endpoint: `/users/USER_ID/works`
 - Method: `GET`
 - Params:
-  - USER_ID:
+  - `USER_ID`:
     - description: return a list of works of a user with this ID
     - usage: call this endpoint to show details of a user and your contents
     - value: any user ID
 - Available query params:
-  - max_id:
+  - `max_id`:
     - description: return a list of works after the work passed on this param
     - usage: use this param to build a pagination system
     - value: any work ID
@@ -113,12 +113,12 @@ img {
 - Endpoint: `/works/WORK_ID/threads`
 - Method: `GET`
 - Params:
-  - WORK_ID:
+  - `WORK_ID`:
     - description: return a list of thread of this work ID
     - usage: call this endpoint to get comments/theads of a certain work
     - value: any work ID
 - Available query params:
-  - max_id:
+  - `max_id`:
     - description: return a list of works after the work passed on this param
     - usage: use this param to build a pagination system
     - value: any work ID
