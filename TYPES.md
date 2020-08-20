@@ -1,4 +1,5 @@
 - ### User
+- Interface
 ```ts
 interface User {
   id: number;
@@ -14,9 +15,11 @@ interface User {
   follower_count: number;
   is_verified: boolean;
 }
+```
 
-// Sample plain user object
-{
+- Example
+```ts
+const user : User = {
   id: 453197;
   name: "にわしか";
   account: "";
