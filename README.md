@@ -113,7 +113,7 @@ img {
 - Endpoint: `/works/WORK_ID/threads`
 - Method: `GET`
 - Params:
-  - USER_ID:
+  - WORK_ID:
     - description: return a list of thread of this work ID
     - usage: call this endpoint to get comments/theads of a certain work
     - value: any work ID
